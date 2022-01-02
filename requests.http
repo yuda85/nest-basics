@@ -1,0 +1,39 @@
+### create new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "123@boom.com",
+    "password": "213"
+}
+### Find particular user
+GET http://localhost:3000/auth/1
+
+### Find All Users with emails
+GET http://localhost:3000/auth/?email=123@boom.com
+
+### Delete particular user
+DELETE http://localhost:3000/auth/2
+
+### Update particular user
+PATCH http://localhost:3000/auth/7
+Content-Type: application/json
+
+{
+    "email": "AAB@BBA.com" ,
+    "password": "YOYOBABA"
+}
+### Update particular user
+PATCH http://localhost:3000/auth/1
+Content-Type: application/json
+
+{
+    "email": "CCC@BBA.com"
+}
+### Update particular user
+PATCH http://localhost:3000/auth/1
+Content-Type: application/json
+
+{
+    "password": "222"
+}
